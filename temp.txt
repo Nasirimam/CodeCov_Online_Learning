@@ -1,1 +1,0 @@
-this is for our sticky navbar,navbar, and footer.
