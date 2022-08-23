@@ -1,0 +1,1 @@
+use this folder for storing and accessing the components
