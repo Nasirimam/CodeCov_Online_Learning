@@ -1,14 +1,14 @@
-// import { stickyNavbar,stickyNavbarCSS } from "./Components/stickyNavbar.js";
+import { stickyNavbar,stickyNavbarCSS } from "./Components/stickyNavbar.js";
 
-// console.log(stickyNavbar)
+console.log(stickyNavbar)
 
 
-// let body = document.getElementById('body')
+let body = document.getElementById('body')
 
-// body.innerHTML=stickyNavbar()
+body.innerHTML=stickyNavbar()
 
-// let style = document.getElementById('style')
+let style = document.getElementById('style')
 
-// console.log(stickyNavbarCSS())
+console.log(stickyNavbarCSS())
 
-// style.innerHTML = stickyNavbarCSS()
+style.innerHTML = stickyNavbarCSS()

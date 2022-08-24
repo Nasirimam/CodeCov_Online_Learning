@@ -7,16 +7,17 @@
 #container{
     width: 100%;
     border: 0px solid black;
+    background-color: transparent;
 }
 #mini_container{
     width: 90%;
     display: flex;
     margin: auto;
-    border: 2px solid blue;
+    border: 0px solid blue;
     gap: 40px;
 }
 #mini_container>div{
-    border: 2px solid red;
+    border: 0px solid red;
 }
 #logo_div{
     width: 20%;
@@ -26,26 +27,29 @@
     height: 100%;
 }
 #nav_ul{
-    border: 2px solid green;
+    border: 0px solid green;
     display: flex;
     gap: 20px;
     font-size: 17px;
     font-weight: 500;
-    
 }
 
 #nav_ul>li{
-    border: 2px solid gold;
+    border: 0px solid gold;
+    padding-top: 20px;
 }
 #nav_ul>li>div{
     display: flex;
-    border: 2px solid purple;
+    border: 2px solid #f07;
+    background-color: antiquewhite;
     position: absolute;
     visibility: hidden;
     border-radius: 6px;
 }
 #nav_ul>li:hover>div{
     visibility: visible;
+    transition-duration: 1s;
+    padding: 10px;
 }
 
 #nav_ul>li>div>ul{
@@ -54,8 +58,16 @@
     flex-direction: column;
     gap: 10px;
 }
+i{
+    margin-right: 10px;
+}
 
-
+#nav_ul>li>div>ul>li{
+    margin: 0px 20px 15px -15px;
+}
+#nav_ul>li>div>ul>li>a:hover{
+    color: #f07;
+}
 /* Last Div CSS */
 
 
@@ -69,7 +81,7 @@
     font-size: 17px;
 }
 #end_ul{
-    border: 2px solid green;
+    border: 0px solid green;
     display: flex;
     gap: 20px;
     font-size: 17px;
@@ -78,18 +90,25 @@
 }
 
 #end_ul>li{
-    border: 2px solid gold;
+    border: 0px solid gold;
+    padding-top: 20px;
+}
+#end_ul>li:last-child{
+    padding: 5px;
 }
 #end_ul>li>div{
     display: flex;
     flex-direction: column;
-    border: 2px solid purple;
+    border: 2px solid #f07;
+    background-color: antiquewhite;
     position: absolute;
     visibility: hidden;
     border-radius: 6px;
 }
 #end_ul>li:hover>div{
     visibility: visible;
+    transition-duration: 1s;
+    padding: 5px;
 }
 .login_image{
     display: flex;
@@ -97,7 +116,7 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    border: 2px solid green;
+    border: 0px solid green;
 }
 .login_image>img{
     width: 10%;
@@ -108,4 +127,15 @@
 }
 .login_image>p{
     font-size: 13px;
+}
+
+#getdemobtn{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
 }
