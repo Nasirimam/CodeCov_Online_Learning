@@ -1,6 +1,38 @@
 
 // Made By Pranshu Singh Bisht (fw20_0423)
 
+
+function stickyNavbarCSS(){
+
+    return `
+    #right-item {
+        display: flex;
+        width: 40%;
+    }
+    .button:hover {
+        border: 1px solid #999;
+    }
+    .button {
+        cursor: pointer;
+        width: 25%;
+        height: 54%;
+        margin-left: 2%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid rgb(213, 209, 209);
+        font-size: medium;
+        /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+        background-color: white;
+    }
+    @media all and (min-width:0px) and (max-width:1286px) {
+        #header {
+            display: none !important;
+        }
+    }`
+}
+
+
 function stickyNavbar(){
     return `
     <header id="header"
@@ -31,35 +63,8 @@ function stickyNavbar(){
             </button>
         </div>
     </nav>
-    <style>
-        #right-item {
-            display: flex;
-            width: 40%;
-        }
-        .button:hover {
-            border: 1px solid #999;
-        }
-        .button {
-            cursor: pointer;
-            width: 25%;
-            height: 54%;
-            margin-left: 2%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border: 1px solid rgb(213, 209, 209);
-            font-size: medium;
-            /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
-            background-color: white;
-        }
-        @media all and (min-width:0px) and (max-width:1286px) {
-            #header {
-                display: none !important;
-            }
-        }
-    </style>
 </header>
     `
 }
-    export default stickyNavbar
+    export {stickyNavbar,stickyNavbarCSS }
 
