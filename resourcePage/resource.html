@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resource.css">
+</head>
+
+<body>
+    <h1 id='resources_heading'>Resources</h1>
+    <div id="main">
+        <div id="search_filter">
+            <div id="search">
+                <input type="text" onkeypress="search(event.key)" id="input">
+                <img id='search_logo' onclick="search('run')"
+                    src="https://about.codecov.io/wp-content/plugins/facetwp/assets/images/icon-search.png">
+            </div>
+            <div id="type" class="filter">
+                <p>Any Type</p>
+                <img src="https://cdn-icons-png.flaticon.com/128/32/32209.png" alt="">
+                <div class="options">
+                    <div><input type="text" placeholder="Search" class="innerSearch">
+                        <hr>
+                    </div>
+                    <div id="option_type" class="boxes">
+                    </div>
+                </div>
+            </div>
+            <div id="language" class="filter">
+                <p>Any Language</p>
+                <img src="https://cdn-icons-png.flaticon.com/128/32/32209.png" alt="">
+                <div class="options">
+                    <div><input type="text" placeholder="Search" class="innerSearch">
+                        <hr>
+                    </div>
+                    <div id="option_lang" class="boxes">
+                    </div>
+                </div>
+            </div>
+            <div id="tool" class="filter">
+                <p>Any Tool</p>
+                <img src="https://cdn-icons-png.flaticon.com/128/32/32209.png" alt="">
+                <div class="options">
+                    <div><input type="text" placeholder="Search" class="innerSearch">
+                        <hr>
+                    </div>
+                    <div id="option_tool" class="boxes">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cards"></div>
+    </div>
+</body>
+
+</html>
+
+<!-- <script type="module">
+    import stickyNavbar from './components/stickyNavbar.js'
+    container.innerHTML = stickyNavbar();
+</script> -->
+<script src="resource.js"></script>
