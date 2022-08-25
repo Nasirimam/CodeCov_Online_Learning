@@ -1,0 +1,55 @@
+#loginNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    }
+    #leftNav{
+    width: 10%;
+    height: 70%;
+    display: flex;
+    justify-content: safe;
+    align-items: center;
+    }
+    
+    #leftNav>img{
+        height: 50px;
+    width: 56px;
+    position: relative;
+    top: 0px;
+    }
+    #leftNav a{
+        margin-left: 25px;
+        color: white;
+    }
+    
+    #rightNav{
+        display: flex;
+        white-space: nowrap;
+    }
+    #rightNav a{
+    color: white;
+    }
+    nav a{
+        font-weight: 700;
+        font-size: large;
+    }
+    
+    nav a:hover{
+        text-decoration: underline;
+    }
+    @media all and (min-width:0px) and (max-width:742px){
+        #loginNav{
+            display: grid;
+        }
+        #leftNav a:nth-child(3){
+            margin-right: 25px;
+        }
+        #rightNav{
+            margin-bottom: 12px;
+        }
+        main{
+            height: 500px;;
+        }
+    }
