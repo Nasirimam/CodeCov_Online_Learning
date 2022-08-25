@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "poppins", -apple-system, BlinkMacSystemFont, Roboto, "Arial", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    ;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #0f1b29;
+    --pink: #f07;
+    --white: #f6f9fc;
+    --border: #dee2e6;
+}
+
+body {
+    height: 1000vh;
+    background-color: var(--white);
+    background-image: url(https://about.codecov.io/wp-content/themes/codecov/assets/backgrounds/bg-blobs-02.svg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position-x: right;
+    position: relative;
+}
+
+#resources_heading {
+    color: var(--blue);
+    text-align: center;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+    margin: 3rem 0px;
+}
+
+#main {
+    /* border: 1px solid black; */
+    width: 75%;
+    display: flexbox;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+}
+
+#search_filter {
+    /* border: 1px solid blue; */
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 20px;
+}
+
+#cards {
+    border: 1px solid red;
+    width: 65%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#search,
+.filter {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+}
+
+#search>input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline-color: #f07;
+    border: 1px solid var(--border);
+}
+
+#search img,
+.filter img {
+    height: 50%;
+    position: absolute;
+    right: 10px;
+}
+
+.filter {
+    height: 35px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.filter>img {
+    height: 30%;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    text-align: left;
+    padding: 5px;
+    gap: 15px;
+    position: absolute;
+    left: 0px;
+    top: 35px;
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    z-index: 1;
+    border-end-end-radius: 5px;
+    background-color: #fff;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.innerSearch {
+    border: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+    #main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search_filter {
+        width: 90%;
+        margin: auto;
+        position: static;
+    }
+
+    #cards {
+        margin: auto;
+        margin-top: 20px;
+        position: static;
+    }
+}
