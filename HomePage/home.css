@@ -1,0 +1,239 @@
+body{
+    background-color: rgba(202, 202, 202, 0.164);
+}
+#getstart_main{
+    border: 0px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-bottom: 40px;
+}
+
+#getstart_main>div{
+    border: 0px solid red;
+}
+
+#getstart_main>div:first-child{
+    width: 30%;
+}
+
+#getstart_main>div:first-child>h1{
+    font-size: 40px;
+    font-weight: 800
+}
+
+#getstart_main>div:first-child>p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    font-family: "poppins",-apple-system,BlinkMacSystemFont,Roboto,"Arial",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+#code_coverage{
+    color: #f07;
+    background-color: rgba(255, 0, 119, 0.199);
+    cursor: pointer;
+}
+
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: #f07;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#getstart_main>div:first-child>button{
+    font-size: 17px;
+    padding: 9px 15px;
+    border-radius: 5px;
+    border: 0px;
+    font-weight: 600;
+    background-color: #f07;
+    color: white;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+#getstart_main>div:first-child>span{
+    color: #f07;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* LAST DIV HERE */
+
+
+#getstart_main>div:last-child{
+    width: 30%;
+}
+
+#getstart_main>div:last-child>img{
+    width: 100%;
+}
+
+/* Second ORG div */
+
+#ORG_div{
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+#ORG_div>h4{
+    color: #6c757d;
+    border: 0px solid red;
+    margin-bottom: 40px;
+}
+
+#ORG_div>div{
+    border: 0px solid  red;
+    width: 60%;
+    display: flex;
+}
+
+#ORG_div>div>div{
+    border: 0px solid green;
+    width: 12%;
+    margin: auto;
+}
+#ORG_div>div>div>img{
+    width: 100%;
+    height: 30px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%)
+}
+
+#ORG_div>div>div>img:hover{
+    --webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+/* 3rd DC div */
+
+#DC_div{
+    border: 0px solid black;
+    text-align: center;
+    margin-bottom: 150px;
+}
+#DC_div>h1{
+    width: 55%;
+    margin: auto;
+    margin-bottom: 30px;
+    font-family: "poppins",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#DC_div>div{
+    border: 0px solid red;
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#DC_div>div>div{
+    width: 40%;
+    margin: auto;
+}
+
+#DC_div>div>div:last-child{
+    text-align: justify;
+}
+
+#DC_div>div>div>img{
+    width: 100%;
+}
+#DC_div>div>div:last-child>p{
+    line-height: 1.6rem;
+    font-weight: 600;
+    font-family: "poppins",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* 4th Help Part */
+
+#help_div{
+    border: 0px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#help_div>h1{
+    border: 0px solid blue;
+}
+
+#help_div>div{
+    border: 0px solid red;
+}
+
+#help_div>div{
+    border: 0px solid green;
+    display: flex;
+    width: 90%;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+#Help_child_1{
+    width: 50%;
+}
+
+#Help_child_2{
+    width: 60%;
+}
+
+
+#Help_child_1>div>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Help_child_1>div>a>span{
+    font-size: 25px;
+}
+
+#Help_child_1>div>a>img{
+    width: 10%;
+}
+
+#Help_child_1{
+    display: flex;
+    flex-direction: column;
+    gap :20px;
+    border: 0px solid goldenrod;
+}
+
+#Help_child_1>div{
+    border: 0px solid peru;
+    padding: 14px 7px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#Help_child_1>div:hover{
+    background-color: rgba(250, 157, 200, 0.144);
+}
+
+#Help_child_2{
+    border: 0px solid cyan;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 2rem;
+    font-weight: 600;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-family: "poppins",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Help_child_2>ul>li{
+    color: #f07;
+}
+
+#Help_child_2>p>a{
+    color: #f07;
+}
