@@ -14,7 +14,6 @@
 }
 
 body {
-    height: 1000vh;
     background-color: var(--white);
     background-image: url(https://about.codecov.io/wp-content/themes/codecov/assets/backgrounds/bg-blobs-02.svg);
     background-repeat: no-repeat;
@@ -39,7 +38,7 @@ body {
     margin: auto;
     text-align: center;
     position: relative;
-    height: 100vh;
+    height: 215vh;
 }
 
 #search_filter {
@@ -53,12 +52,14 @@ body {
 }
 
 #cards {
-    border: 1px solid red;
-    width: 65%;
-    height: 100vh;
+    /* border: 1px solid red; */
+    width: 60%;
     position: absolute;
     right: 0;
     top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 #search,
@@ -128,6 +129,63 @@ body {
     font-size: 16px;
 }
 
+.card>img {
+    width: 100%;
+}
+
+.card {
+    border-radius: 5px;
+    contain: content;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+#cards h1 {
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+
+.card span {
+    font-size: .8rem;
+    color: var(--pink);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card main {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    gap: 10px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+
+.card>footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: .8rem;
+    color: var(--pink);
+    font-weight: 600;
+    background-color: white;
+}
+
+.card footer img {
+    width: 15%;
+    border-radius: 50%;
+    border: 1px solid beige;
+}
+
+.card footer div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+}
+
+
 @media screen and (max-width: 992px) {
     #main {
         flex-direction: column;
@@ -144,5 +202,14 @@ body {
         margin: auto;
         margin-top: 20px;
         position: static;
+        grid-template-columns: repeat(1, 1fr);
+        border: 1px solid black;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 532px){
+    #cards{
+        width: auto;
     }
 }

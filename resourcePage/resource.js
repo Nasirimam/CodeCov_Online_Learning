@@ -3,6 +3,7 @@ let rotType = -180;
 let rotLang = -180;
 let rotTool = -180;
 
+// all options for sorting 
 let types = ['Blog Post (111)', 'Tutorial (32)', 'Media Coverage (7)', 'Article (6)', 'On-Demand Webinar (6)', 'ebook (2)', 'video (2)'];
 
 let languages = ['Node / Javascript (13)', 'Java (11)', 'PHP (9)', 'GO (8)', 'C++ (7)', 'Kotlin (2)', 'Swift (2)', 'Ruby (3)'];
@@ -28,7 +29,7 @@ document.querySelector('#tool > img').addEventListener('click', () => {
     rotate('tool');
 });
 
-
+// rotates the arrow icon on clicking 
 function rotate(id) {
     document.querySelector(`#${id} > img`).style.transition = `ease-in .15s`;
     if (id == 'type') {
@@ -69,6 +70,7 @@ function rotate(id) {
     }
 }
 
+// search functionality on top 
 function search(x) {
     if (x == 'Enter' || x === 'run') {
         let img = document.querySelector('#search_logo')
@@ -84,9 +86,17 @@ function search(x) {
     }
 }
 
+// options available for sorting
+function addOptions(type, names, filter) {
 
-function addOptions(type, names) {
-    console.log(option_type)
+    // search functionality inside checkbox
+    if (filter == 'filter') {
+        let arr = names.filter(elm => {
+            let str = event.target.value;
+            return elm.toLowerCase().includes(str);
+        });
+        names = arr;
+    }
     type.innerHTML = '';
     names.forEach(elm => {
         let div = document.createElement('div');
@@ -98,5 +108,3 @@ function addOptions(type, names) {
         type.append(div);
     });
 }
-
-
