@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing-Codecov</title>
+</head>
+<style>
+
+    #main{
+        display:flex;
+        gap:150px;
+        margin-top: 100px;
+        background-color: rgb(249, 249, 253);
+    }
+    #main>div>h1{
+        margin-top:70px;
+        font-family: "poppins",-apple-system,BlinkMacSystemFont,Roboto,"Arial",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size:30px;
+        color: #0f1b29;
+      line-height: 3.6rem;
+    font-size: 2.6rem;
+    font-weight: 800;
+    }
+    #main>div>img{
+        height:100px;
+    }
+    #main>div>p{
+        color:rgb(239, 86, 112);
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    #main>div>h3{
+       font-weight: bold;
+       
+    }
+    #main>div>button{
+        width:120px;
+        font-weight: 300;
+    cursor: pointer;
+    padding: 0.8rem 1.4rem;
+    font-size: .9rem;
+    line-height: 1.1rem;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #0e1b29;
+    border-color: #fff;
+}
+    #main>div{
+        text-align: center;
+    }
+    #body{
+      display:flex;
+      height:40px;
+      width:150px;
+      margin-top:100px;
+      justify-content: space-between;
+      margin-left:100px;
+      background-color: rgb(250, 252, 251);
+    }
+    #body>img{
+        height:40px;
+        margin-top: 38px;
+       
+    }
+    #body>h5{
+        font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    color: #0e1b29;
+
+    }
+    #para{
+        margin-top: 100px;
+        margin-left: 100px;
+        font-weight: bold;
+
+    }
+    #para{
+        display: flex;
+        gap:200px
+    }
+    #body1{
+      display:flex;
+      height:40px;
+      width:230px;
+      margin-top:100px;
+      justify-content: space-between;
+      margin-left:100px;
+      background-color: rgb(250, 252, 251);
+    }
+    #body1>img{
+        height:40px;
+        margin-top: 38px;
+       
+    }
+    #body1>h5{
+        font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    color: #0e1b29;
+
+    }
+    #body2{
+      display:flex;
+      height:40px;
+      width:230px;
+      margin-top:100px;
+      justify-content: space-between;
+      margin-left:100px;
+      background-color: rgb(250, 252, 251);
+    }
+    #body2>img{
+        height:40px;
+        margin-top: 38px;
+       
+    }
+    #body2>h5{
+        font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    color: #0e1b29;
+
+    }
+    #body3{
+      display:flex;
+      height:40px;
+      width:180px;
+      margin-top:100px;
+      justify-content: space-between;
+      margin-left:100px;
+      background-color: rgb(250, 252, 251);
+    }
+    #body3>img{
+        height:40px;
+        margin-top: 38px;
+       
+    }
+    #body3>h5{
+        font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    color: #0e1b29;
+
+    }
+    #body4{
+      display:flex;
+      height:40px;
+      width:180px;
+      margin-top:100px;
+      justify-content: space-between;
+      margin-left:100px;
+      background-color: rgb(250, 252, 251);
+    }
+    #body4>img{
+        height:40px;
+        margin-top: 38px;
+       
+    }
+    #body4>h5{
+        font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    color: #0e1b29;
+
+    }
+   
+    #que{
+        margin-top: 100px;
+        background-color: rgb(250, 252, 251);
+        margin-left: 400px;
+    }
+
+
+    .dropbtn {
+      color: black;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      width:600px;
+      border:2px solid  rgb(239, 86, 112);
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {}
+</style>
+<body>
+    <div id="main">
+        <div>
+        <h1>Compare Plans</h1>
+        </div>
+        <div>
+        <img src="https://about.codecov.io/wp-content/uploads/2022/05/umbrella.png" alt="">
+        <p>OPEN SOURCE</p>
+        <h3>Free</h3>
+        <button onclick="go()">Get Started</button>
+        </div>
+        <div>
+            <img src="https://about.codecov.io/wp-content/uploads/2022/05/parasol.png" alt="">
+        <p>BASIC</p>
+        <h3>Free</h3>
+        <button onclick="go()">Get Started</button>
+        </div>
+        <div>
+            <img src="https://about.codecov.io/wp-content/uploads/2022/05/partytent.png" alt="">
+        <p>PRO</p>
+        <h3>$10/user/month</h3>
+        <button onclick="go()">Get Started</button>
+        </div>
+        <div>
+            <img src="https://about.codecov.io/wp-content/uploads/2022/05/gazebo.png" alt="">
+        <p>ENTERPRICE</p>
+        <h3>Coustom Pricing</h3>
+        <button onclick="go()">Get Started</button>
+        </div>
+    </div>
+
+    <div id="body">
+        <img src="https://about.codecov.io/wp-content/uploads/2022/05/icon-users.svg" alt="">
+        <h5>USERS</h5>
+    </div>
+    <div id="para">
+        <div><p>Users</p></div>
+        <div><p>Up to 5 Users</p></div>
+        <div><p>Unlimited</p></div>
+        <div><p>Customizable</p></div>
+        <div><p>Customizable</p></div>
+    </div>
+    <div id="body3">
+        <img src="https://about.codecov.io/wp-content/uploads/2022/05/icon-hosting.svg" alt="">
+        <h5>HOISTING</h5>
+    </div>
+    <div id="para">
+        <div><p>Codecov Cloud</p></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+    </div>
+    <div id="para">
+        <div><p>Selfhosted price</p></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+    </div>
+    <div id="body2">
+        <img src="https://about.codecov.io/wp-content/uploads/2022/05/icon-repositories.svg" alt="">
+        <h5>REPOSITORIES</h5>
+    </div>
+    <div id="para">
+        <div><p>Codecov Cloud</p></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+    </div>
+    <div id="para">
+        <div><p>Selfhosted price</p></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+    </div>
+    <div id="para">
+        <div><p>Codecov Cloud</p></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+    </div>
+    <div id="body1">
+        <img src="https://about.codecov.io/wp-content/uploads/2022/05/icon-private-repo.svg" alt="">
+        <h5>PRIVATE REPO</h5>
+    </div>
+    <div id="para">
+        <div><p>Codecov Cloud</p></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+    </div>
+    <div id="para">
+        <div><p>Selfhosted price</p></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+    </div>
+    <div id="para">
+        <div><p>Selfhosted price</p></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+    </div>
+    <div id="body4">
+        <img src="https://about.codecov.io/wp-content/uploads/2022/05/icon-security.svg" alt="">
+        <h5>SECURITY</h5>
+    </div>
+    <div id="para">
+        <div><p>Codecov Cloud</p></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+    </div>
+    <div id="para">
+        <div><p>Selfhosted price</p></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+    </div>
+    <div id="para">
+        <div><p>Codecov Cloud</p></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+        <div><img src="https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg" alt=""></div>
+    </div>
+    <div id="que">
+    <div class="dropdown">
+        <button class="dropbtn">Which plan is best for me</button>
+        <div class="dropdown-content">
+          <a>Pro - this plan is best for small sized teams<br>
+            looking for minimal support.</a>
+          <a>this plan is best for medium to large sized teams requiring more robust support.</a>
+        </div>
+
+    </div>
+
+
+    <div class="dropdown">
+        <button class="dropbtn">What defines a user?</button>
+        <div class="dropdown-content">
+          <a>A "user" is anyone who authors a pull request or merge request on a private repo with Codecov coverage, or accesses advanced features on Codecov.io for a private repo.
+
+            For example, anyone with access to your repos in Github/ Gitlab/ Bitbucket will be able to see Codecov data on the codehost if a user has authored a PR (an example from an open source project, scrapy, is here). Once you click through the Codecov comment you enter Codecov.io to see more robust metrics, historical trends, and coverage visualizations (example from the same PR here ).</a>
+        </div>
+    </div> 
+
+
+    <div class="dropdown">
+        <button class="dropbtn">Can I trial Codecov before subscribing to a plan?</button>
+        <div class="dropdown-content">
+          <a>Yes, for the first 5 users in your organization, Codecov is totally free.
+
+            Need more than 5 users? Reach out to us and we can help up your user count temporarily.</a>
+        </div>
+    </div> 
+
+
+    <div class="dropdown">
+        <button class="dropbtn">Does Codecov support multiple languages and/or applications in a single repository (a "monorepo")?</button>
+        <div class="dropdown-content">
+          <a>Like a pro! We combine the uploads from multiple languages into a single report while maintaining the original data for each specific language.
+
+            For multiple applications, you can use our Flags feature to segment coverage in your repository. With Carryforward Flags , you can partially run your CI and Codecov will carryforward tests not run on that commit.</a>
+        </div>
+    </div> 
+
+    <div class="dropdown">
+        <button class="dropbtn">Does Codecov offer support?</button>
+        <div class="dropdown-content">
+          <a>Our mission is to improve your development workflow and support is no exception. As a pro customer, we offer you email support 24/5. Our Enterprise plans offer more robust support - including an Enterprise-only SLA, access to a Sr. Solutions Architect for dedicated onboarding support, a Customer Success Manager, and legal attention, if required.</a>
+        </div>
+    </div> 
+
+    <div class="dropdown">
+        <button class="dropbtn">What defines a Private Repo Upload for the Basic Plan?</button>
+        <div class="dropdown-content">
+          <a>Codecov does not store source code. Codecov will only retrieve source code from your repository for two functions: upon user request and for static analysis. Read more in our Security Docs.</a>
+        </div>
+    </div> 
+</div>
+</body>
+</html>
+<script>
+    function go()
+    {
+        window.location.href="https://google.com";
+    }
+</script>
+
+
+
+
