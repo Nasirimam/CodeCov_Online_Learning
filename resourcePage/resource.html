@@ -178,9 +178,14 @@
             </div>
         </div>
     </div>
+    <div id="container"></div>
 </body>
 
 </html>
 
-
+<script type="module" src="./components/stickyNavbar.js">
+    import stickyNavbar from './stickyNavbar.js';
+    container.innerHTML = stickyNavbar();
+    console.log(stickyNavbar());
+</script>
 <script src="resource.js"></script>

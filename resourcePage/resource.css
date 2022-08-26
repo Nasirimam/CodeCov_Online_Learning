@@ -175,7 +175,6 @@ body {
 .card footer img {
     width: 15%;
     border-radius: 50%;
-    border: 1px solid beige;
 }
 
 .card footer div {
@@ -203,7 +202,7 @@ body {
         margin-top: 20px;
         position: static;
         grid-template-columns: repeat(1, 1fr);
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 400px;
     }
 }
