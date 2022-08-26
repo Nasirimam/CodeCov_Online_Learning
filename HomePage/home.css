@@ -157,7 +157,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 250px;
 }
 
 #help_div>h1{
@@ -236,4 +236,141 @@ body{
 
 #Help_child_2>p>a{
     color: #f07;
+}
+
+/* Middle Code Coverage Part */
+
+#CodeC_div{
+    border: 0px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;margin-bottom: 200px;
+}
+
+
+
+#CodeC_div>p{
+    width: 55%;
+    margin-top: -15px;
+    margin-bottom: 50px;
+    line-height: 1.6rem;
+    font-weight: 600;
+    font-family: "poppins",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#CodeC_div>div{
+    border: 0px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#CodeC_div>div>div>img{
+    width: 100%;
+}
+
+#CodeC_div>div>div{
+    width: 40%;
+    height: 100%;
+    border: 0px solid blue;
+
+}
+
+/* CodeC_part */
+
+#CodeC_part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+#CodeC_part>div{
+    border: 0px solid cyan;
+    text-align: left;
+}
+
+#CodeC_part>div>p{
+    font-size: 12px;
+    font-weight: 800;
+    color: #6c757d;
+    font-family: "poppins",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#CodeC_part>div>button{
+    border: 0px solid blue;
+    color: #0e7b8a!important;
+    background-color: #deeef6;
+    border-radius: 3px;
+    padding: 1px 8px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-family: "poppins",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#V_Ctmr{
+    border: 0px solid black;
+}
+
+#V_Ctmr>div{
+    border: 0px solid red;
+    margin-bottom: 80px;
+}
+
+
+#V_Ctmr>div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#V_Ctmr>div:first-child>p{
+    width: 32%;
+    text-align: center;
+    margin-top: -3px;
+    margin-bottom: 25px;
+}
+#V_Ctmr>div:first-child>button{
+    font-size: 17px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 0px;
+    font-weight: 600;
+    background-color: #f07;
+    color: white;
+    cursor: pointer;
+}
+
+#Logos_of_part{
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+#Logos_of_part>div{
+    border: 0px solid blue;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .4s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#Logos_of_part>div:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#Logos_of_part>div>img{
+    width: 60%;
+    height: 60px;
 }
