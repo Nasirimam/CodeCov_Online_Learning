@@ -62,7 +62,7 @@ function mainNavbar(){
                     <ul id="end_ul">
                         <li><a href="">Login</a>
                             <div id="Login_container">
-                                <div class="login_image">
+                                <div class="login_image" id="gitLogin">
                                     <img src="https://about.codecov.io/wp-content/themes/codecov/assets/logos/ci/github/github-icon.svg" alt="">
                                     <p>GitHub</p>
                                 </div>
