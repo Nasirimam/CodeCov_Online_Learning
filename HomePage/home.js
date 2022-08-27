@@ -10,13 +10,13 @@ container.innerHTML = temp
 style.innerText = mainNavbarCSS()
 
 
-import { footer } from "./footer.js";
+// import { footer } from "./footer.js";
 
-let temp2 = footer()
+// let temp2 = footer()
 
-let footer_div = document.getElementById('footer_div')
+// let footer_div = document.getElementById('footer_div')
 
-footer_div.innerHTML = temp2
+// footer_div.innerHTML = temp2
 
 
 // import { stickyNavbar } from "./stickyNavbar.js";
