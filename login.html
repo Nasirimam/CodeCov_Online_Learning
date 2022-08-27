@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <nav>
+        <span>
+            <img src="https://about.codecov.io/wp-content/themes/codecov/assets/logos/ci/gitlab/gitlab-icon.svg" alt="">
+        </span>
+    </nav>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2 style="color: red;"> Status<span>...</span></h2>
+            <a id="close" id="" href="#">&times;</a>
+            <div class="content" id="popAlert">
+            </div>
+        </div>
+    </div>
+    <main>
+        <div id="leftMain">
+            <div>
+                <h1 style="margin-bottom:10px ;">GitLab.com</h1>
+
+                <p>GitLab.com offers free unlimited (private) repositories and unlimited collaborators.</p>
+                <ul>
+                    <li> <a href="">Explore projects on GitLab.com </a> (no login needed) </li>
+                    <li><a href="">More information about GitLab.com</a></li>
+                    <li><a href="">GitLab Community Forum</a></li>
+                    <li><a href="">GitLab Homepage</a></li>
+                </ul>
+                <p>By signing up for and by signing in to this service you accept our:</p>
+                <ul>
+                    <li>Privacy policy</li>
+                    <li>Cookie Policy</li>
+                    <li>GitLab.com Terms</li>
+                </ul>
+            </div>
+        </div>
+        <div id="rightMain">
+            <div>
+                <div id="loginBox">
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email" class="log" id="eml">
+                    </div>
+                    <div>
+                        <label for="">Password</label>
+                        <input type="password" class="log" id="psd">
+                    </div>
+                    <div id="loginB">
+                        <div><input type="checkbox">
+                            <h6 id="rememberMe" style="white-space:nowrap">Remember me</h6>
+                        </div>
+                        <div style="white-space:nowrap ;"><a href="">Forget your password?</a></div>
+                    </div>
+                    <button id="signIn" class="log" onclick="signIn()">Sign in</button>
+                </div>
+
+                <p id="cP">Don't have an account yet? <a href="" style="white-space:nowrap" >Register now</a> </p>
+                <div id="loginRef">
+                    <h6 id="bottomH">Sign in with</h6>
+                    <div>
+                        <button class="log"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="">Google</button>
+                        <button class="log"><img src="https://cdn-icons-png.flaticon.com/512/919/919847.png" alt="">Github</button>
+                        <button class="log"><img src="https://cdn-icons-png.flaticon.com/512/6125/6125001.png" alt="">Bitbucket</button>
+                        <button class="log"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="">Twitter</button>
+                        <button class="log"><img src="https://cdn-icons-png.flaticon.com/512/873/873143.png" alt="">Salesforce</button>
+                    </div>
+                    <span id="bottomRem">
+                    <input type="checkbox" style="display: inline">
+                    <h6 style="white-space:nowrap">Remember me</h6>
+                </span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer id="footer">
+        <div>
+            <a href="" class="footerText">Explore</a>
+            <a href="" class="footerText">Help</a>
+            <a href="" class="footerText">About GitLab</a>
+            <a href="" class="footerText">Community forum</a>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="./scripts/login.js"></script>
