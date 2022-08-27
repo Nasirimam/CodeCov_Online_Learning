@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="navbar_container"></div>
+    <div id="sticky_container"></div>
     <h1 id='resources_heading'>Resources</h1>
     <div id="main">
         <div id="search_filter">
@@ -184,26 +184,20 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD:resource.html
     <div id="footer_container"></div>
-=======
     <div id="container"></div>
->>>>>>> main:resourcePage/resource.html
 </body>
 
 </html>
 
-<<<<<<< HEAD:resource.html
 <script type="module">
     import footer from './components/footer.js';
     footer_container.innerHTML = footer();
 </script>
+
 <script src="scripts/resource.js"></script>
-=======
-<script type="module" src="./components/stickyNavbar.js">
-    import stickyNavbar from './stickyNavbar.js';
-    container.innerHTML = stickyNavbar();
-    console.log(stickyNavbar());
+
+<script type="module">
+    import stickyNavbar from './components/stickyNavbar.js';
+    sticky_container.innerHTML = stickyNavbar();
 </script>
-<script src="resource.js"></script>
->>>>>>> main:resourcePage/resource.html
