@@ -22,6 +22,10 @@ body {
     position: relative;
 }
 
+header{
+    
+}
+
 #resources_heading {
     color: var(--blue);
     text-align: center;
@@ -201,10 +205,6 @@ body {
         margin: 20px auto;
         position: static;
         grid-template-columns: repeat(1, 1fr);
-<<<<<<< HEAD:css/resource.css
-=======
-        /* border: 1px solid black; */
->>>>>>> main:resourcePage/resource.css
         width: 400px;
     }
 }

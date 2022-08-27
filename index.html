@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style id="style"></style>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 <body>
 
-    
+
     <div id="sticky_Nav">
     </div>
 
     <div id="container">
         
     </div>
+=======
+    <div id="container"> </div>
+>>>>>>> 7f0aff1a8c9a7e45b02880fb65b7139de8ca1cf7:index.html
     <!-- Top 1sr Part -->
     <div id="getstart_main">
         <div>
             <h1>Ship healthier code faster with less risk<span class="dot"></span></h1>
             <p>Join 1M+ developers worldwide in shipping healthier code with <a href="" id="code_coverage"> code coverage </a> from Codecovs.</p>
-            <button>Get Started</button><span>Schedule a Demo</span>
+            <button  onclick='window.location.href="./getADemo.html"'>Get Started</button><span onclick='window.location.href="./getADemo.html"'>Schedule a Demo</span>
         </div>
         <div>
             <img src="https://about.codecov.io/wp-content/themes/codecov/assets/templates/home/pull-request-comments.svg" alt="All Check Passed">
@@ -206,7 +209,7 @@
         <div>
             <h1>Who else is covered?</h1>
             <p>Over 29K organizations and 1M+ developers trust Codecov to gain visibility into their code coverage.</p>
-            <button>View Custumers</button>
+            <button  onclick='window.location.href="./customers.html"'>View Customers</button>
         </div>
         <div id="Logos_of_part">
             <div>
@@ -241,6 +244,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- Resources -->
 
@@ -288,6 +292,20 @@
     </div>
 
     <div id="footer_div"></div>
+
+    <footer id="footer"></footer>
+
 </body>
 </html>
-<script src="home.js" type="module"></script>
+<script type="module">
+import { mainNavbar , mainNavbarCSS } from "./components/navbar.js";
+document.getElementById ('container').innerHTML = mainNavbar();
+document.getElementById ('style').innerText = mainNavbarCSS();
+
+import footer from "./components/footer.js"
+document.getElementById('footer').innerHTML = footer()
+
+
+
+</script>
+<script src="./scripts/index.js"></script>

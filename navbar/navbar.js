@@ -43,7 +43,7 @@ function mainNavbar(){
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="">Resources</a>
+                        <li><a href="./resource.html">Resources</a>
                             <div>
                                 <ul>
                                     <li><a href=""><i class="fa-solid fa-file-prescription"></i>All Resources</a></li>
