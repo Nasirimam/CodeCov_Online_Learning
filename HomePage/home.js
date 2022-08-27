@@ -19,10 +19,10 @@ let footer_div = document.getElementById('footer_div')
 footer_div.innerHTML = temp2
 
 
-import { stickyNavbar } from "./stickyNavbar.js";
+// import { stickyNavbar } from "./stickyNavbar.js";
 
-let temp3 = stickyNavbar()
+// let temp3 = stickyNavbar()
 
-let sticky_Nav = document.getElementById('sticky_Nav')
+// let sticky_Nav = document.getElementById('sticky_Nav')
 
-sticky_Nav.innerHTML = temp3
+// sticky_Nav.innerHTML = temp3
