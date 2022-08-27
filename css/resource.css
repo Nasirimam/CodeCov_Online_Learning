@@ -22,10 +22,6 @@ body {
     position: relative;
 }
 
-header{
-    
-}
-
 #resources_heading {
     color: var(--blue);
     text-align: center;
@@ -188,6 +184,18 @@ header{
     width: 60%;
 }
 
+#sticky_container {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+}
 
 @media screen and (max-width: 992px) {
     #main {
