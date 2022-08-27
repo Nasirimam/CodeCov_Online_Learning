@@ -135,12 +135,12 @@ function footer() {
         </div>
     </div>
     <style>
-    * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "poppins", -apple-system, BlinkMacSystemFont, Roboto, "Arial", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
+//     * {
+//     margin: 0px;
+//     padding: 0px;
+//     box-sizing: border-box;
+//     font-family: "poppins", -apple-system, BlinkMacSystemFont, Roboto, "Arial", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+// }
 
 #footer {
     background-color: #0f1b29;
