@@ -22,6 +22,10 @@ body {
     position: relative;
 }
 
+header{
+    
+}
+
 #resources_heading {
     color: var(--blue);
     text-align: center;

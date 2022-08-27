@@ -52,5 +52,5 @@ function backPage(){
 }
 
 function goToHome(){
-    window.location.href="./"
+    window.location.href="./index.html"
 }

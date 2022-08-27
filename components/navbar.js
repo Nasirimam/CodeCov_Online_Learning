@@ -34,7 +34,7 @@ function mainNavbar(){
                             </div>
                         </li>
                         <li><a href="">Documentation</a></li>
-                        <li><a href="">Customers</a>
+                        <li><a href="./customers.html">Customers</a>
                             <div>
                                 <ul>
                                     <li><a href=""><i class="fa-solid fa-building-user"></i>Our Customers</a></li>
@@ -43,7 +43,7 @@ function mainNavbar(){
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="">Resources</a>
+                        <li><a href="./resource.html">Resources</a>
                             <div>
                                 <ul>
                                     <li><a href=""><i class="fa-solid fa-file-prescription"></i>All Resources</a></li>
@@ -54,29 +54,29 @@ function mainNavbar(){
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./contactUs.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div id="end_div">
                     <ul id="end_ul">
-                        <li><a href="">Login</a>
+                        <li><a href="./login.html">Login</a>
                             <div id="Login_container">
-                                <div class="login_image" id="gitLogin">
+                                <div class="login_image" onclick='window.location.href="./login(Github).html"'>
                                     <img src="https://about.codecov.io/wp-content/themes/codecov/assets/logos/ci/github/github-icon.svg" alt="">
                                     <p>GitHub</p>
                                 </div>
-                                <div class="login_image">
+                                <div class="login_image" onclick='window.location.href="./login(Gitlab).html"'>
                                     <img src="https://about.codecov.io/wp-content/themes/codecov/assets/logos/ci/gitlab/gitlab-icon.svg" alt="">
                                     <p>GitLab</p>
                                 </div>
-                                <div class="login_image">
+                                <div class="login_image" onclick='window.location.href="./login(Bitbucket).html"'>
                                     <img src="https://about.codecov.io/wp-content/themes/codecov/assets/logos/ci/bitbucket/bitbucket-icon.svg" alt="">
                                     <p>Bitbucket</p>
                                 </div>
                             </div>
                         </li>
-                        <li><button id="getdemobtn">Get Demo</button></li>
+                        <li><button id="getdemobtn" onclick='window.location.href="./getADemo.html"' >Get Demo</button></li>
                     </ul>
                 </div>
             </div>
@@ -229,6 +229,7 @@ function mainNavbarCSS(){
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.87);
         color: white;
+        cursor: pointer;
     }`
 }
 
