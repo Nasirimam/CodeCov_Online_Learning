@@ -70,7 +70,7 @@ function footer() {
         <div>
             <a href="">CUSTOMERS</a>
             <li>
-                <a href="">Customers</a>
+                <a href="customers.html">Customers</a>
             </li>
             <li>
                 <a href="">Case Studies</a>
