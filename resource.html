@@ -6,51 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="resource.css">
+    <link rel="stylesheet" href="css/resource.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div id="navbar_container"></div>
     <h1 id='resources_heading'>Resources</h1>
     <div id="main">
         <div id="search_filter">
-            <div id="search">
-                <input type="text" onkeypress="search(event.key)" id="input">
-                <img id='search_logo' onclick="search('run')"
-                    src="https://about.codecov.io/wp-content/plugins/facetwp/assets/images/icon-search.png">
-            </div>
-            <div id="type" class="filter">
-                <p>Any Type</p>
-                <img src="https://cdn-icons-png.flaticon.com/128/32/32209.png" alt="">
-                <div class="options">
-                    <div><input type="text" placeholder="Search" oninput='addOptions(option_type,types,`filter`)'
-                            class="innerSearch">
-                        <hr>
-                    </div>
-                    <div id="option_type" class="boxes">
+            <div>
+                <div id="search">
+                    <input type="text" onkeypress="search(event.key)" id="input">
+                    <img id='search_logo' onclick="search('run')"
+                        src="https://about.codecov.io/wp-content/plugins/facetwp/assets/images/icon-search.png">
+                </div>
+                <div id="type" class="filter">
+                    <p>Any Type</p>
+                    <img src="https://cdn-icons-png.flaticon.com/128/32/32209.png" alt="">
+                    <div class="options">
+                        <div><input type="text" placeholder="Search" oninput='addOptions(option_type,types,`filter`)'
+                                class="innerSearch">
+                            <hr>
+                        </div>
+                        <div id="option_type" class="boxes">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="language" class="filter">
-                <p>Any Language</p>
-                <img src="https://cdn-icons-png.flaticon.com/128/32/32209.png" alt="">
-                <div class="options">
-                    <div><input type="text" placeholder="Search" class="innerSearch"
-                            oninput='addOptions(option_lang,languages,`filter`)'>
-                        <hr>
-                    </div>
-                    <div id="option_lang" class="boxes">
+                <div id="language" class="filter">
+                    <p>Any Language</p>
+                    <img src="https://cdn-icons-png.flaticon.com/128/32/32209.png" alt="">
+                    <div class="options">
+                        <div><input type="text" placeholder="Search" class="innerSearch"
+                                oninput='addOptions(option_lang,languages,`filter`)'>
+                            <hr>
+                        </div>
+                        <div id="option_lang" class="boxes">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="tool" class="filter">
-                <p>Any Tool</p>
-                <img src="https://cdn-icons-png.flaticon.com/128/32/32209.png" alt="">
-                <div class="options">
-                    <div><input type="text" placeholder="Search" class="innerSearch"
-                            oninput='addOptions(option_tool,tools,`filter`)'>
-                        <hr>
-                    </div>
-                    <div id="option_tool" class="boxes">
+                <div id="tool" class="filter">
+                    <p>Any Tool</p>
+                    <img src="https://cdn-icons-png.flaticon.com/128/32/32209.png" alt="">
+                    <div class="options">
+                        <div><input type="text" placeholder="Search" class="innerSearch"
+                                oninput='addOptions(option_tool,tools,`filter`)'>
+                            <hr>
+                        </div>
+                        <div id="option_tool" class="boxes">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,9 +184,13 @@
             </div>
         </div>
     </div>
+    <div id="footer_container"></div>
 </body>
 
 </html>
 
-
-<script src="resource.js"></script>
+<script type="module">
+    import footer from './components/footer.js';
+    footer_container.innerHTML = footer();
+</script>
+<script src="scripts/resource.js"></script>
