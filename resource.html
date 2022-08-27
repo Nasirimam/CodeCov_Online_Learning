@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style id="style"></style>
 </head>
 
 <body>
-    <div id="sticky_container"></div>
+    <div id="sticky_container" class="nav"></div>
     <h1 id='resources_heading'>Resources</h1>
     <div id="main">
         <div id="search_filter">
@@ -185,7 +186,8 @@
         </div>
     </div>
     <div id="footer_container"></div>
-    <div id="container"></div>
+    <!-- <div id="container"></div> -->
+
 </body>
 
 </html>
@@ -199,5 +201,11 @@
 
 <script type="module">
     import stickyNavbar from './components/stickyNavbar.js';
-    sticky_container.innerHTML = stickyNavbar();
+    document.getElementById('sticky_container').innerHTML = stickyNavbar();
+    
+    import { mainNavbar , mainNavbarCSS } from "./components/navbar.js";
+    document.getElementsByClassName('nav')[0].innerHTML = mainNavbar();
+    document.getElementById ('style').innerText = mainNavbarCSS();
+    
+
 </script>
