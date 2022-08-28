@@ -188,7 +188,15 @@ font-size: 20px;
 
 
 </style>
+<style id="style"></style>
 <body>
+  <div id="sticky_Nav">
+  </div>
+
+  <div id="container">
+      
+  </div>
+  <div id="container"> </div>
     <h1 id="heading">Our Customers</h1>
     <div id="second">
         <div id="second1"><img src="https://balloupr.com/wp-content/uploads/2021/12/udacity-bg.jpg"/></div>
@@ -264,6 +272,7 @@ font-size: 20px;
     <div id="data">
        
     </div>
+     <footer id="footer"></footer>
 </body>
 </html>
 
@@ -524,4 +533,15 @@ function filter()
 }
 
 </script>
-
+<script type="module">
+  import { mainNavbar , mainNavbarCSS } from "./components/navbar.js";
+  document.getElementById ('container').innerHTML = mainNavbar();
+  document.getElementById ('style').innerText = mainNavbarCSS();
+  
+  import footer from "./components/footer.js"
+  document.getElementById('footer').innerHTML = footer()
+  
+  
+  
+  
+  </script>

@@ -213,7 +213,15 @@
     
     .dropdown:hover .dropbtn {}
 </style>
+<style id="style"></style>
 <body>
+    <div id="sticky_Nav">
+    </div>
+  
+    <div id="container">
+        
+    </div>
+    <div id="container"> </div>
     <div id="main">
         <div>
         <h1>Compare Plans</h1>
@@ -403,15 +411,27 @@
         </div>
     </div> 
 </div>
+<footer id="footer"></footer>
 </body>
 </html>
 <script>
     function go()
     {
-        window.location.href="https://google.com";
+        window.location.href="./login.html";
     }
 </script>
-
+<script type="module">
+    import { mainNavbar , mainNavbarCSS } from "./components/navbar.js";
+    document.getElementById ('container').innerHTML = mainNavbar();
+    document.getElementById ('style').innerText = mainNavbarCSS();
+    
+    import footer from "./components/footer.js"
+    document.getElementById('footer').innerHTML = footer()
+    
+    
+    
+    
+    </script>
 
 
 
