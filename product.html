@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #heading {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: auto;
+            margin-top: 100px;
+            text-align: left;
+        }
+
+        .img-pr {
+            width: 450px;
+            margin-top: 30px;
+        }
+
+        .text-pr {
+            width: 350px;
+            margin-top: 70px;
+        }
+
+        .head-pr {
+            text-transform: uppercase;
+            color: #2c2c2c;
+            font-size: 11px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin: 24px 0 16px;
+
+
+        }
+
+        .text-heading-pr {
+            font-size: 1.6rem;
+            line-height: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            color: #212529;
+        }
+
+        .text-para {
+            font-size: 1rem;
+            line-height: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .read-more-text {
+            text-decoration: none;
+            color: #f07;
+            font-weight: 400;
+        }
+
+
+        .last-section {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: auto;
+            margin-top: 50px;
+            width: 55%;
+            text-align: center;
+            border-radius: 10px;
+            height: 220px;
+        }
+
+        .last-section-heading {
+            font-size: 1.6rem;
+            padding-top: 35px;
+            line-height: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .last-section-para {
+            font-size: 20px;
+            width: 65%;
+            margin: auto;
+            line-height: 1.6rem;
+            font-weight: 400;
+        }
+        .black-btn,.red-btn{
+            color: white;
+            width: 270px;
+            height: 45px;
+            font-size: 20px;
+            border-radius: 7px;
+            background-color: black;
+            border: none;
+            margin-top: 20px;
+            margin: 15px;
+        }
+        .red-btn{
+            background-color: red;
+        }
+
+        @media  screen and (max-width:1100px) {
+            .img-pr {
+            width: 250px;
+            height: 150px;
+            
+        }
+
+.text-heading-pr {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 4px;
+    font-weight: 300;
+}
+.text-para {
+            font-size: .7rem;
+            line-height: 0.8rem;
+            font-weight: 100;
+            margin-bottom: 4px;
+        }
+       .text-pr{
+        margin: 10px;
+        width: 470px;
+       }
+ 
+        }
+        @media  screen and (max-width:900px) {
+            .img-pr {
+            width: 150px;
+        }
+        }
+        @media  screen and (max-width:500px) {
+            .first {
+            display: grid;
+            grid-template-columns: repeat(1 , 1fr);
+            width: 90%;
+        }
+        .img-pr {
+            width: 300px;
+        }
+        .text-heading-pr {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 4px;
+    font-weight: 300;
+}
+.text-para {
+            font-size: .7rem;
+            line-height: 0.8rem;
+            font-weight: 100;
+            margin-bottom: 4px;
+        }
+       .text-pr{
+        margin: 10px;
+        width: 470px;
+       }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="heading">
+        <h1>Features</h1>
+    </div>
+    <div class="first">
+        <div class="text-pr">
+            <div class="head-pr">PUBLIC BETA</div>
+            <div class="text-heading-pr">Impact Analysis</div>
+            <div class="text-para">Impact Analysis takes runtime information from an application’s production
+                environment and provides this information contextually in the Codecov dashboard and in the Codecov pull
+                request comment. Now, in any pull …</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2022/06/0622_ProjectInsights.jpg"
+            alt="error">
+    </div>
+
+    <div class="first">
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2020/10/Source-Code-Coverage-1.png"
+            alt="error">
+        <div class="text-pr">
+            <!-- <div class="head-pr">PUBLIC BETA</div> -->
+            <div class="text-heading-pr">Source Code Coverage</div>
+            <div class="text-para">Codecov makes it easy to see absolute coverage and coverage changes overlayed with your source code, making it even easier to identify needed test areas.</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+
+    </div>
+    <div class="first">
+        <div class="text-pr">
+            <!-- <div class="head-pr">PUBLIC BETA</div> -->
+            <div class="text-heading-pr">Multi Language, Multi CI/CD</div>
+            <div class="text-para">Regardless of what languages or CI/CDs you use, we can process your code coverage uploads against your entire project. Codecov just works out of the box.</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2020/10/CD.png"
+            alt="error">
+    </div>
+
+    <div class="first">
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2020/10/Pull-request-comments.png"
+            alt="error">
+        <div class="text-pr">
+            <!-- <div class="head-pr">PUBLIC BETA</div> -->
+            <div class="text-heading-pr">Pull Request Comments</div>
+            <div class="text-para">Get a summary of coverage information directly in your workflow so that you can add and update tests quickly and effectively.</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+
+    </div>
+    <div class="first">
+        <div class="text-pr">
+            <!-- <div class="head-pr">PUBLIC BETA</div> -->
+            <div class="text-heading-pr">Status Checks</div>
+            <div class="text-para">Block underperforming pull requests from being merged with status checks. No more indecision if a code change has enough test coverage.</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2020/10/Status-Checks-1.png"
+            alt="error">
+    </div>
+
+    <div class="first">
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2020/10/Gthub-Badges.png"
+            alt="error">
+        <div class="text-pr">
+            <!-- <div class="head-pr">PUBLIC BETA</div> -->
+            <div class="text-heading-pr">Badges</div>
+            <div class="text-para">A Codecov badge is a live icon that is displayed within your code host that gives you a glance into the status of your project’s percentage of code coverage. It’s …</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+
+    </div>
+    <div class="first">
+        <div class="text-pr">
+            <!-- <div class="head-pr">PUBLIC BETA</div> -->
+            <div class="text-heading-pr">Report Merging</div>
+            <div class="text-para">Do you generate multiple coverage reports? Codecov can handle merging them seamlessly, whether you upload multiple reports at once or across different CI/CDs</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2020/10/Report-Merging.png"
+            alt="error">
+    </div>
+
+    <div class="first">
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2020/10/Flags.png"
+            alt="error">
+        <div class="text-pr">
+            <!-- <div class="head-pr">PUBLIC BETA</div> -->
+            <div class="text-heading-pr">Flags</div>
+            <div class="text-para">Do you split your testing between your frontend and backend? Maybe collect coverage by project in a monorepository? You can isolate coverage information based on groupings using Codecov Flags</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+
+    </div>
+    <div class="first">
+        <div class="text-pr">
+            <!-- <div class="head-pr">PUBLIC BETA</div> -->
+            <div class="text-heading-pr">YAML</div>
+            <div class="text-para">Customize Codecov’s behavior with a developer friendly YAML file that can conform to even the most complex codebases and workflows.</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2020/10/YAML.png"
+            alt="error">
+    </div>
+
+    <div class="first">
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2020/10/Carryforward-flags.png"
+            alt="error">
+        <div class="text-pr">
+            <!-- <div class="head-pr">PUBLIC BETA</div> -->
+            <div class="text-heading-pr">Carryforward Flags</div>
+            <div class="text-para">Don’t run your entire test suite on every commit? Use Carryforward Flags to get consistent coverage metrics, even when you don’t upload all coverage reports.</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+
+    </div>
+
+    <div class="first">
+        <div class="text-pr">
+            <!-- <div class="head-pr">PUBLIC BETA</div> -->
+            <div class="text-heading-pr">GitHub Checks</div>
+            <div class="text-para">Want to see uncovered lines directly on a GitHub pull request? Our GitHub Checks feature shows you line-by-line coverage so you can stay in your workflow.</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2020/10/Checks-passed.png"
+            alt="error">
+    </div>
+
+    <div class="first">
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2020/10/Notifications.png"
+            alt="error">
+        <div class="text-pr">
+            <!-- <div class="head-pr">PUBLIC BETA</div> -->
+            <div class="text-heading-pr">
+                Notifications</div>
+            <div class="text-para">Get notified of coverage changes on Slack, Gitter, or any other IRC-compatible service.</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+
+    </div>
+    <div class="first">
+        <div class="text-pr">
+            <div class="head-pr">EARLY ACCESS ALPHA</div>
+            <div class="text-heading-pr">Runtime Insights</div>
+            <div class="text-para">Runtime Insights uses information obtained during your application’s runtime to provide contextual information to Pull Requests. Runtime Insights currently supports Codecov’s Critical Changes feature, which includes: Labeling Pull Requests as …</div>
+            <a href="#" class="read-more-text">Read More &rarr;</a>
+        </div>
+        <img class="img-pr" src="https://about.codecov.io/wp-content/uploads/2021/12/runtime-insights-1.png"
+            alt="error">
+    </div>
+
+
+
+    <section class="last-section">
+        <h1 class="last-section-heading">Ready to get covered?</h1>
+        <p class="last-section-para">
+            Join over a million developers in shipping healthier code today. Sign up with your code host below.
+        </p>
+        <button class="black-btn">Get Started</button>
+        <button class="red-btn">Schedule Demo</button>
+
+    </section>
+
+</body>
+
+</html>
