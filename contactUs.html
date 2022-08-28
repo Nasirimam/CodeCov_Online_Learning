@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="./css/contactUs.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <span id="logo"><img src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/logos/codecov.svg"
+                    alt="">
+            </span>
+        </div>
+    </nav>
+    <main>
+        <div id="main1">
+            <div id="container">
+                <div id="upper"></div>
+                <div class="carousel" data-flickity='{"wrapAround":true, "autoPlay": true }'>
+
+                    <div class="carousel-cell">
+                        <img src="./images/hitachi.png" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./images/grab.png" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./images/theWashingtonPost.png" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./images/weWork.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main2">
+            <form>
+                <div>
+                    <div id="fullName" class="info">
+                        <div>
+                            <label for="">First Name: <span>*</span></label>
+                            <input type="text" id="firstName">
+                        </div>
+                        <div>
+                            <label for="">Last Name <span>*</span></label>
+                            <input type="text" id="lastName">
+                        </div>
+                    </div>
+                    <div id="contact" class="info">
+                        <div>
+                            <label for="">Email Address <span>*</span></label>
+                            <input type="email" id="email">
+                        </div>
+                        <div>
+                            <label for="">Phone Number: <span>*</span></label>
+                            <input type="number" id="phoneNumber">
+                        </div>
+                    </div>
+                    <div id="enquiry" class="info">
+                        <label for="">Contact Reason: <span>*</span></label>
+                        <select id="contactReason">
+                            <option style="display: none;"></option>
+                            <option value="General Enquiry">General Enquiry</option>
+                            <option value="Become a Partner">Become a Partner</option>
+                            <option value="Help and Support">Help and Support</option>
+                        </select>
+                    </div>
+                    <div id="message" class="info">
+                        <label for="">Message: <span>*</span></label>
+                        <textarea id="msg" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="info" id="btn-p">
+                        <input type="button" value="Submit" id="btn" class="button">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="./scripts/contactUs.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

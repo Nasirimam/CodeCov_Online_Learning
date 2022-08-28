@@ -1,0 +1,137 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+    }
+
+    header {
+        height: 80px;
+       background-color: rgb(34, 47, 61);
+       color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        width: 100%;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #tapGit {
+        height: fit-content;
+        margin-top: 40px;
+        display: grid;
+    }
+
+    img {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top: 7px;
+        right: 5px;
+    }
+
+    #container {
+        height: 80%;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #container>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        margin: 20px;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+
+    #but-anc {
+        height: 40px;
+        display: flex;
+        font-weight: 400
+    }
+
+    #but-anc>div:nth-child(1) {
+        width: 90%;
+        border: 1px solid rgb(175, 175, 175);
+        height: 100%;
+        cursor: pointer;
+    }
+
+    #but-anc>div:nth-child(1):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(234 235 239/var(--tw-bg-opacity));
+    }
+
+    #but-anc>div:nth-child(2) {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(175, 175, 175);
+        border-left: none;
+        cursor: pointer;
+    }
+
+    #but-anc>div:nth-child(2):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(234 235 239/var(--tw-bg-opacity));
+    }
+
+    button {
+        width: 100%;
+        height: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        width: 80%;
+    }
+
+    button {
+        width: 20%;
+    }
+
+    #l1>hr {
+        margin-bottom: 30px;
+
+    }
+
+    #l2>hr {
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: 400
+    }
+
+    hr {
+        border: 1px solid rgb(189, 189, 189);
+    }

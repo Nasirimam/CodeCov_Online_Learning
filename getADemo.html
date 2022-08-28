@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/getADemo.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Get A Demo</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <span id="logo"><img src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/logos/codecov.svg"
+                    alt="">
+            </span>
+        </div>
+    </nav>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2 style="color: red;"> Status<span>...</span></h2>
+            <a id="close" id="" href="#">&times;</a>
+            <div class="content" id="popAlert">
+            </div>
+        </div>
+    </div>
+    <main>
+        <div id="main1">
+            <div id="container">
+                <div id="upper">
+                    <h2>Status <span>.</span></h2>
+                    <br>
+                    <p>Fill in the form to the right to get in touch with someone on our team, and we will reach out
+                        shortly.</p>
+                    <br>
+                    <p>If you are seeking support please visit our <a href=""
+                            style="text-decoration:none; color:rgb(255, 0, 119);;"> support portal </a> before reaching
+                        out directly.</p>
+                </div>
+
+
+
+                <div class="carousel" data-flickity='{"wrapAround":true, "autoPlay": true }'>
+
+                    <div class="carousel-cell">
+                        <img src="./images/hitachi.png" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./images/grab.png" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./images/theWashingtonPost.png" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./images/weWork.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main2">
+            <form id="form">
+                <div>
+                    <div>
+                        <label for="">First Name: <span>*</span></label>
+                        <input value="" type="text" id="firstName">
+                    </div>
+                    <div>
+                        <label for="">Last Name <span>*</span></label>
+                        <input type="text" id="lastName">
+                    </div>
+                    <div>
+                        <label for="">Email Address <span>*</span></label>
+                        <input type="email" id="email">
+                    </div>
+                    <div>
+                        <label for="">Phone Number: <span>*</span></label>
+                        <input type="number" id="phoneNumber">
+                    </div>
+                    <div>
+                        <label for="">Set Password: <span>*</span></label>
+                        <input type="password" id="setPassword">
+                    </div>
+                    <div>
+                        <label for="">Confirm Password: <span>*</span></label>
+                        <input type="password" id="confirmPassword">
+                    </div>
+
+                    <div class="info" id="btn-p">
+                        <button id="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
+<script src="./scripts/getADemo.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
