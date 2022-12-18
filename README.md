@@ -10,7 +10,7 @@ This is a collaborative Project from Masai School in the Construct Week. We are 
 
 4. Param Singh
 
-5.Pranshu Singh Bist
+5.Pranshu Singh Bisht
 
 💻Project Unique Name :- Codecov ✈️
 ---
