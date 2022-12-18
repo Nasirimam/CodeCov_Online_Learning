@@ -4,7 +4,7 @@ This is a collaborative Project from Masai School in the Construct Week. We are 
 
 1. Nasir Imam : Team Lead
 
-2. Aman Singh
+2. Aman Singh Chauhan
 
 3. Vijay
 
