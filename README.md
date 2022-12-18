@@ -8,7 +8,7 @@ This is a collaborative Project from Masai School in the Construct Week. We are 
 
 3. Vijay Bodhgaya
 
-4. Param Singh
+4. Param Ravish
 
 5.Pranshu Singh Bisht
 
