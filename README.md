@@ -10,7 +10,7 @@ This is a collaborative Project from Masai School in the Construct Week. We are 
 
 4. Param Ravish
 
-5.Pranshu Singh Bisht
+5. Pranshu Singh Bisht
 
 💻Project Unique Name :- Codecov ✈️
 ---
@@ -19,7 +19,7 @@ Codecov is a online learning website, for providing end to end solution to to yo
 💫Tech & Tools Used :
 --- 
 
-For Frontend : HTML5, CSS3, Javascript, JS6
+For Frontend : HTML5, CSS3, Javascript
 
 For database: Json Server.
         
